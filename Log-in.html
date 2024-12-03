@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hospital management - Login</title>
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background: #2e2e3e;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .login-container {
+      background: #1c1c2b;
+      padding: 30px;
+      width: 350px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .login-container img {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .login-container h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      background: #29293a;
+      color: #ddd;
+      outline: none;
+    }
+
+    .login-container input[type="email"]::placeholder,
+    .login-container input[type="password"]::placeholder {
+      color: #888;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background: #73ff73;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background: #5ee55e;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="ccs.png" alt="CCS logo">
+    <h2>Administrator Log-in</h2>
+    <form>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button onclick="login()">Login</button>
+    </form>
+  </div>
+
+  <script type="text/javascript">
+
+    function login() {
+            
+        window.location.href = "dashboard.html";
+    }
+            
+
+  </script>
+
+</body>
+</html>

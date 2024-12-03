@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+
+                /* Reset and Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 20%;
+            height: 100vh;
+            background-color: #222;
+            color: #fff;
+            position: fixed;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+            
+        }
+
+        .profile p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .profile span {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 30px;
+            font-size: 30px;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            color: white;
+            text-shadow: 2px 2px 4px #000000
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 20%;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        .date-range {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Stats Cards */
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 22%;
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+        }
+
+        /* Charts */
+        .charts {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .charts canvas {
+            width: 48%;
+            max-height: 300px;
+        }
+        .graphs {
+            padding: 50px;
+            margin: 30px;
+            height: 30px;
+            width: 30px;
+        }
+
+    </style>    
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Psychologist</h2>
+        <div class="profile">
+            <img src="miming.webp" height="150px" width="150px" alt="Profile Picture" style="border-radius: 100px;">
+            <p>Anselm B. Yaba</p>
+            <span>Administrator</span>
+        </div>
+        <div>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="nav.html">Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Dashboard</h1>
+            <div class="date-range">June 8, 2024 - July 7, 2024</div>
+        </header>
+
+        <!-- Stats Cards -->
+        <div class="cards">
+            <div class="card" style="background-color: #F7B267;">
+                <h2>1257</h2>
+                <p>Reviews / Month</p>
+            </div>
+            <div class="card" style="background-color: #FF6F6F;">
+                <h2>346</h2>
+                <p>Clients / Month</p>
+            </div>
+            <div class="card" style="background-color: #6EC6CA;">
+                <h2>216</h2>
+                <p>Orders / Month</p>
+            </div>
+            <div class="card" style="background-color: #6A71D7;">
+                <h2>$346k</h2>
+                <p>Total Profit</p>
+            </div>
+        </div>
+
+        <div class="graphs">
+            <img src="graph2.ppm" height="400px" width="900px">
+            <img src="graph1.PNG" height="400px" width="900px">
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
